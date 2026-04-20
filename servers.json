@@ -1,0 +1,13 @@
+{
+  "servers": [
+    {"name":"Web TUSGSAL","host":"tusgsal.cat","ports":[80]},
+    {"name":"Time Control","host":"tc.direxis.es","ports":[80]},
+    {"name":"Web Grup TG","host":"tg.direxis.es","ports":[80]},
+    {"name":"Atlas CMI","host":"192.168.11.212","ports":[1433]},
+    {"name":"Victoria Paradas","host":"192.168.11.223","ports":[1433]},
+    {"name":"ERIDE SQL","host":"192.168.11.234","ports":[1433]},
+    {"name":"ERIDE Web","host":"eride.direxisexchange.com","ports":[443]},
+
+    {"name":"Pizarra","host":"192.168.11.220","ports":[3010, 4010, 5010, 9000, 9001]}
+  ]
+}

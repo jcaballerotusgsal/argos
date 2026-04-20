@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #F2A900;
+    --secondary-color: #c9780e;
+    --background-color: #ecf0f1;
+    --title-color: #2c3e50;
+    --text-color: #2c3e50;
+
+    --border-box: #4a6b8b;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body.dark {
+    --primary-color: #F2A900;
+    --secondary-color: #c9780e;
+    --background-color: #34495e;
+    --title-color: #2c3e50;
+    --text-color: #ecf0f1;
+
+    --border-box: #75a8b4;
+    --shadow-color: rgba(255, 255, 255, 0.2);
+}
