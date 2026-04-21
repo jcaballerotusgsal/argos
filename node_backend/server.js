@@ -3,7 +3,7 @@ const sql = require('mssql');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3020;
 
 app.use(cors());
 
@@ -108,6 +108,6 @@ app.get('/api/indicadores_hist', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Backend Node iniciado en http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Backend Node iniciado en puerto ${PORT}`);
 });
