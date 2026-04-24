@@ -1,6 +1,6 @@
 async function cargarIndicadoresEstado() {
     try {
-        const response = await fetch('http://localhost:3000/api/indicadores');
+        const response = await fetch('http://192.168.11.220:3020/api/indicadores');
         const result = await response.json();
 
         const contenedor = document.querySelector("#list-indicadores");
@@ -133,7 +133,7 @@ async function cargarIndicadoresEstado() {
 
 async function obtenerGraficoHistoricoPorIndicador(idIndicador, verde, amarillo, naranja, rojo) {
     try {
-        const response = await fetch('http://localhost:3000/api/indicadores_hist');
+        const response = await fetch('http://192.168.11.220:3020/api/indicadores_hist');
         const result = await response.json();
 
         if (!result.ok || !Array.isArray(result.data)) {
