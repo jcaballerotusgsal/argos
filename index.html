@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Argos Monitor | Panel TV</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="screen-shell">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <p class="eyebrow">Panel de supervision</p>
+                    <h1>Argos Monitor</h1>
+                </div>
+
+                <div class="topbar-meta">
+                    <section class="meta-card">
+                        <span class="meta-label">Estado general</span>
+                        <strong id="overallStatus">--</strong>
+                    </section>
+
+                    <section class="meta-card">
+                        <span class="meta-label">Ultima revision</span>
+                        <strong id="generatedAt">--</strong>
+                    </section>
+                </div>
+            </header>
+
+            <main class="dashboard">
+                <section class="summary-grid" id="summaryGrid"></section>
+
+                <section class="content-grid">
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Servicios activos</p>
+                                <h2>Disponibilidad por IP</h2>
+                            </div>
+                            <p class="panel-note">10 IPs visibles sin scroll.</p>
+                        </div>
+
+                        <div class="table-shell services-shell">
+                            <table class="data-table services-table">
+                                <thead>
+                                    <tr>
+                                        <th>Servicio</th>
+                                        <th>IP</th>
+                                        <th>Puerto</th>
+                                        <th>Estado</th>
+                                        <th>Respuesta</th>
+                                        <th>Ultimo check</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="servicesTableBody"></tbody>
+                            </table>
+                        </div>
+                    </article>
+
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Procedures controladas</p>
+                                <h2>Ejecucion y volumen</h2>
+                            </div>
+                            <p class="panel-note">Chequeo de ejecucion y conteo.</p>
+                        </div>
+
+                        <div class="procedures-grid" id="proceduresGrid"></div>
+                    </article>
+                </section>
+            </main>
+        </div>
+
+        <script src="assets/data/mock-data.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
